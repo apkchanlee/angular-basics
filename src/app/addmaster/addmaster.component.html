@@ -1,0 +1,68 @@
+<h1>Add master data</h1>
+<br>
+<div class="container">
+
+    
+     <br>
+  
+  <div class="row">
+    <div class="col">
+      <label for="mname">Material Name</label>
+      <input type="text" class="form-control" name="mname" [(ngModel)]="mname" id="mname" required>
+    </div>
+    <div class="col">
+      <label for="mcount">Material Count</label>
+      <input type="number" class="form-control" name="mcount" [(ngModel)]="mcount" id="mcount" required>
+    </div>
+  </div><br>
+
+  <div class="row">
+    <div class="col">
+      <label for="mtype">Material Type</label>
+      <input type="text" class="form-control" name="mtype" [(ngModel)]="mtype" id="mtype" required>
+    </div>
+    <div class="col">
+      <label for="uoml">UOM Label</label>
+      <input type="text" class="form-control" name="uoml" [(ngModel)]="uoml" id="uoml" required>
+    </div>
+  </div><br>
+
+
+  <div class="row">
+    <div class="col">
+      <label for="uom">UOM</label>
+      <input type="number" class="form-control" name="uom" [(ngModel)]="uom" id="uom" required>
+    </div>
+    <div class="col">
+      <label for="procl">Procurement Location</label>
+      <input type="text" class="form-control" name="procl" [(ngModel)]="procl" id="procl" required>
+    </div>
+  </div><br>
+
+<div class="row">
+    <div class="col">
+      <label for="procv">Procurement Vendor</label>
+      <input type="text" class="form-control" name="procv" [(ngModel)]="procv" id="procv" required>
+    </div>
+    <div class="col">
+      <label for="cost">Procurement Cost</label>
+      <input type="number" class="form-control" name="cost" [(ngModel)]="cost" id="cost" required>
+    </div>
+  </div><br>
+
+  <div class="row">
+   
+    <div class="col col-md-6">
+      <label for="lcost">Logistics Cost</label>
+      <input type="number" class="form-control" name="lcost" [(ngModel)]="lcost" id="lcost" required>
+    </div>
+  </div><br>
+
+  <button type="submit" [disabled]="" (click)="onSubmit()" class="btn btn-primary">Submit</button>
+  <br><br>
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>{{message}}</strong> 
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+</div>
